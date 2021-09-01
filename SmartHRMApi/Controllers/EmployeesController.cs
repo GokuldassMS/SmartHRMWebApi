@@ -45,7 +45,6 @@ namespace SmartHRMApi.Controllers
         [Route("GetEmployeesByFilter")]
         public IEnumerable<Employees> GetEmployeesByFilter([FromQuery] ParamQuery query)
         {
-            //return await _context.Departments.ToListAsync();
             return this.GetEmps(query);
 
         }
